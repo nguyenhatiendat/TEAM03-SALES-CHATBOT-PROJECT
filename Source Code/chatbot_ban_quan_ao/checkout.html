@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán - 3 Thần Đằng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="checkout.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo"><a href="index.html">3 THẦN ĐẰNG</a></div>
+            <div class="header-icons">
+                <a href="login.html" class="icon" id="userIcon"><i class="far fa-user"></i></a>
+                <a href="cart.html" class="icon cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="checkout-page">
+        <div class="checkout-container">
+            <h1>THANH TOÁN</h1>
+            
+            <div class="checkout-content">
+                <div class="checkout-form">
+                    <h3>Thông tin giao hàng</h3>
+                    <div class="login-notice">
+                        <i class="fas fa-user"></i>
+                        <span>Đăng nhập ngay để nhận ưu đãi</span>
+                        <a href="login.html">ĐĂNG NHẬP</a>
+                    </div>
+                    
+                    <form id="checkoutForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Họ tên *</label>
+                                <input type="text" id="fullname" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Số điện thoại *</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Địa chỉ *</label>
+                            <input type="text" id="address" placeholder="Số nhà, tên đường" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Tỉnh/Thành phố</label>
+                                <select id="city">
+                                    <option value="Hồ Chí Minh">TP. Hồ Chí Minh</option>
+                                    <option value="Hà Nội">Hà Nội</option>
+                                    <option value="Đà Nẵng">Đà Nẵng</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Quận/Huyện</label>
+                                <select id="district">
+                                    <option>Quận Bình Thạnh</option>
+                                    <option>Quận 1</option>
+                                    <option>Quận 3</option>
+                                    <option>Quận Phú Nhuận</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <h3>Phương thức thanh toán</h3>
+                        <div class="payment-methods">
+                            <div class="payment-method selected" data-method="cod">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <div>
+                                    <strong>Thanh toán khi nhận hàng (COD)</strong>
+                                    <p>Thanh toán bằng tiền mặt khi nhận hàng</p>
+                                </div>
+                                <i class="fas fa-check-circle check-icon"></i>
+                            </div>
+                            <div class="payment-method" data-method="bank">
+                                <i class="fas fa-university"></i>
+                                <div>
+                                    <strong>Chuyển khoản ngân hàng</strong>
+                                    <p>Chuyển khoản qua các ngân hàng nội địa</p>
+                                </div>
+                                <i class="fas fa-check-circle check-icon"></i>
+                            </div>
+                            <div class="payment-method" data-method="momo">
+                                <i class="fas fa-mobile-alt"></i>
+                                <div>
+                                    <strong>Ví MoMo</strong>
+                                    <p>Thanh toán qua ví điện tử MoMo</p>
+                                </div>
+                                <i class="fas fa-check-circle check-icon"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Lời nhắn cho 3 Thần Đằng (nếu có)</label>
+                            <textarea id="note" rows="3" placeholder="Ghi chú về đơn hàng..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="order-summary">
+                    <h3>Đơn hàng của bạn</h3>
+                    <div id="orderItems"></div>
+                    
+                    <div class="summary-row">
+                        <span>Tạm tính</span>
+                        <span id="subtotal">0đ</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Phí vận chuyển</span>
+                        <span id="shipping">0đ</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Giảm giá</span>
+                        <span id="discount">0đ</span>
+                    </div>
+                    <div class="summary-total">
+                        <span>Cần thanh toán</span>
+                        <span id="total">0đ</span>
+                    </div>
+                    
+                    <button class="place-order-btn" onclick="placeOrder()">HOÀN TẤT ĐƠN HÀNG</button>
+                    <a href="cart.html" class="back-to-cart">← Quay lại giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright"><p>&copy; 2025 3 Thần Đằng</p></div>
+        </div>
+    </footer>
+
+    <df-messenger intent="WELCOME" chat-title="3 Thần Đằng" agent-id="eff46fad-f2ab-46c1-962e-0dfeacc3ae0b" language-code="vi"></df-messenger>
+
+    <script type="module" src="checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Thần Đằng - Trang chủ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo"><a href="index.html">3 THẦN ĐẰNG</a></div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="#" data-category="nam">NAM</a></li>
+                    <li><a href="#" data-category="nu">NỮ</a></li>
+                    <li><a href="#" data-category="tre-em">TRẺ EM</a></li>
+                    <li><a href="#" data-category="phu-kien">PHỤ KIỆN</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="login.html" class="icon" id="userIcon"><i class="far fa-user"></i></a>
+                <a href="cart.html" class="icon cart-icon"><i class="fas fa-shopping-bag"></i><span class="cart-count" id="cartCount">0</span></a>
+                <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-banner">
+        <div class="container">
+            <h1>BỘ SƯU TẬP MỚI</h1>
+            <p>Phong cách đa dạng cho nam, nữ và trẻ em. Chất lượng vượt trội, thiết kế tinh tế.</p>
+        </div>
+    </section>
+
+    <div class="category-tabs">
+        <div class="container">
+            <div class="tabs-container">
+                <button class="tab-btn active" data-category="all">TẤT CẢ</button>
+                <button class="tab-btn" data-category="nam">NAM</button>
+                <button class="tab-btn" data-category="nu">NỮ</button>
+                <button class="tab-btn" data-category="tre-em">TRẺ EM</button>
+                <button class="tab-btn" data-category="phu-kien">PHỤ KIỆN</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="productsGrid"><div class="loading">Đang tải...</div></div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature-item"><i class="fas fa-truck"></i><h4>MIỄN PHÍ GIAO HÀNG</h4><p>Cho đơn hàng từ 1.000.000đ</p></div>
+            <div class="feature-item"><i class="fas fa-undo-alt"></i><h4>ĐỔI TRẢ DỄ DÀNG</h4><p>Trong vòng 7 ngày</p></div>
+            <div class="feature-item"><i class="fas fa-shield-alt"></i><h4>SẢN PHẨM CHÍNH HÃNG</h4><p>Đảm bảo chất lượng</p></div>
+            <div class="feature-item"><i class="fas fa-headset"></i><h4>HỖ TRỢ 24/7</h4><p>Hotline: 0977 990 799</p></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><h4>VỀ 3 THẦN ĐẰNG</h4><ul><li><a href="#">Câu chuyện thương hiệu</a></li><li><a href="#">Hệ thống cửa hàng</a></li></ul></div>
+                <div class="footer-col"><h4>HỖ TRỢ KHÁCH HÀNG</h4><ul><li><a href="#">Hướng dẫn mua hàng</a></li><li><a href="#">Chính sách đổi trả</a></li></ul></div>
+                <div class="footer-col"><h4>THÔNG TIN LIÊN HỆ</h4><p>📍 69/68 Đặng Thùy Trâm, P.13, Q.Bình Thạnh, TP.HCM</p><p>📞 Hotline: 0977 990 799</p></div>
+                <div class="footer-col"><h4>KẾT NỐI</h4><div class="social-links"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div></div>
+            </div>
+            <div class="copyright"><p>&copy; 2025 3 Thần Đằng</p></div>
+        </div>
+    </footer>
+
+    <df-messenger intent="WELCOME" chat-title="3 Thần Đằng" agent-id="eff46fad-f2ab-46c1-962e-0dfeacc3ae0b" language-code="vi"></df-messenger>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
