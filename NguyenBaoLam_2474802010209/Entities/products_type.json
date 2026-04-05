@@ -1,0 +1,44 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "products_type",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "áo",
+      "synonyms": [
+        "áo",
+        "áo thun",
+        "áo sơ mi",
+        "áo khoác",
+        "áo len"
+      ]
+    },
+    {
+      "value": "quần",
+      "synonyms": [
+        "quần",
+        "quần dài",
+        "quần jean",
+        "quần tây"
+      ]
+    },
+    {
+      "value": "vái",
+      "synonyms": [
+        "vái",
+        "váy",
+        "đầm"
+      ]
+    },
+    {
+      "value": "phụ kiện",
+      "synonyms": [
+        "phụ kiện"
+      ]
+    }
+  ],
+  "id": "f71683ac-d6ca-4f34-8530-6a740681b3b0",
+  "isOverridable": false
+}

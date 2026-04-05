@@ -1,0 +1,103 @@
+{
+  "id": "7b62632b-daca-47d7-8eae-e2cf3dbf4659",
+  "name": "vay",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "products_type",
+          "dataType": "@products_type",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$products_type",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Shop có những loại như: Chân váy xếp ly nữ, Đầm suông nữ công sở, Váy hoa nhí nữ tính và Váy bé gái công chúa."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại đầm nào?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7ac72739-b67d-4d0c-9c72-540348492183",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại đầm nào",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f31aa9f8-eedb-4cb3-9988-040ccbf0ddd6",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại váy nào?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "8c41707a-0c47-4cee-ada4-ca210699583c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại váy nào",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ccd34860-c825-4210-8ded-ba4934495955",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

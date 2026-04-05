@@ -1,0 +1,97 @@
+{
+  "id": "8d10f74e-d56d-429a-9fe9-1894e29726a6",
+  "name": "quantay",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "items_type",
+          "dataType": "@items_type",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$items_type",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Shop có bán $items_type với đủ loại size từ S đến XL, với mức giá 549.000đ và đang được trợ giá còn 389.000đ."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Quần tây ống côn",
+          "userDefined": false,
+          "alias": "items_type",
+          "meta": "@items_type"
+        }
+      ],
+      "count": 0,
+      "id": "0f94b057-b3f8-4eb2-9394-8e5fa9168a31",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Quần tây nam ống côn",
+          "userDefined": false,
+          "alias": "items_type",
+          "meta": "@items_type"
+        }
+      ],
+      "count": 0,
+      "id": "c8df026f-3a5e-4867-ac37-3a1b82df958e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Quần tây nam",
+          "userDefined": false,
+          "alias": "items_type",
+          "meta": "@items_type"
+        }
+      ],
+      "count": 0,
+      "id": "a067d635-c30b-4be2-815f-f07bcbbd0a30",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

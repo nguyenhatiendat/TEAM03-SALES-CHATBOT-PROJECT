@@ -1,0 +1,137 @@
+{
+  "id": "da3af842-ad55-4b3e-bf4c-12748fcfd13b",
+  "name": "ask_products",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "🏪 Shop 3 Thần Đằng chuyên cung cấp thời trang đa dạng cho cả gia đình với GIÁ CHỈ TỪ 189.000Đ - 1.050.000Đ:\n\n👨 NAM: Áo thun (289k), sơ mi (429k), quần jean (499k), áo khoác (799k)\n👩 NỮ: Đầm suông (559k), chân váy (389k), áo len (489k), váy hoa (529k)\n🧒 TRẺ EM: Áo thun (189k), váy công chúa (259k), áo khoác gió (289k)\n🧢 PHỤ KIỆN: Mũ (189k), túi canvas (259k), thắt lưng (299k), giày thể thao (499k)\n\nBạn muốn xem chi tiết sản phẩm nào ạ? Tư vấn giúp bạn!"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cho tôi hỏi shop bán gì",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7ab0ae0a-c989-4f7d-89f1-96df128a0b68",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "danh mục sản phẩm",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "721476f3-b903-46ef-88f5-bed9120b2e9c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "shop có những mặt hàng nào",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "37c7cf91-ad88-4fdd-bfc7-32bec4d1e78f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "sản phẩm của shop",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b32c3fc0-3583-4628-a12f-ca28a809f5a8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "3 thần đằng bán gì",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e35e9bd6-cbfd-45f0-832d-ad96700332ba",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cửa hàng có những sản phẩm gì",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "daa958f5-8ba1-473e-b7fe-ab81dca68fd8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "shop bán gì vậy",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ad3a9be6-5d50-4707-a393-f8916197a96d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "shop bán những gì",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e8c41c46-544e-4fcf-867b-d6b5ece3ad2c",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

@@ -1,0 +1,65 @@
+{
+  "id": "84269a3e-3e5d-4565-88c9-c63a3a7d22cb",
+  "name": "quan",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Shop có những loại quần như: Quần tây nam ống côn, Quần jean nam ống rộng."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại quần nào?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a5f98df9-e9a5-41c4-abb8-40446e1bc9e0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại quần nào",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "be8b6b8f-0856-4fd9-82f1-880fb8af22cc",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

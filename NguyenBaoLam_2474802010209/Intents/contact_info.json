@@ -1,0 +1,125 @@
+{
+  "id": "29ee9d7b-1d05-4e40-8ec7-2898b2767198",
+  "name": "contact_info",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "🏪 Shop 3 Thần Đằng\n📞 Hotline: 0977 990 799\n📍 Địa chỉ: 69/68 Đặng Thùy Trâm, P. 13, Q. Bình Thạnh, Tp. HCM\n💬 Email: cskh@3thandang.com\n⏰ Giờ mở cửa: 8:00 - 21:00"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "gọi điện cho shop",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1b14b363-b49d-402c-a581-83e3215ef805",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hotline",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "cfdf3003-476a-4db3-aa9d-2b1356c8991a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "3 thần đằng ở đâu",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d70cdaa2-50f3-47d1-94e7-e4b9ad9ffa43",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "shop ở đâu",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d3be0c84-d871-410a-8479-16fd108ef8b7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "liên hệ thế nào",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f95a8211-4bd6-4326-a3c5-a42132c47308",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "địa chỉ shop",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d9cadfed-4fbb-4036-80b7-3eb2c9359322",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "số điện thoại shop",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ef26160a-239b-4d97-ade7-7054182afbf8",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

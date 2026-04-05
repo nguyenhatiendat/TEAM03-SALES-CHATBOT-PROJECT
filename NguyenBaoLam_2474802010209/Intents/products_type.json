@@ -1,0 +1,95 @@
+{
+  "id": "14c0fb31-6459-4aca-8cc4-70710102bf44",
+  "name": "products_type",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "products_type",
+          "dataType": "@products_type",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$products_type",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Shop có bán $products_type. Bạn muốn xem mẫu nào?"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Tôi muốn xem ",
+          "userDefined": false
+        },
+        {
+          "text": "@products_type",
+          "userDefined": true,
+          "alias": "products_type",
+          "meta": "@products_type"
+        }
+      ],
+      "count": 0,
+      "id": "b635b46b-9418-4ac1-8102-6495e5c69ddd",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Shop có bán ",
+          "userDefined": false
+        },
+        {
+          "text": "@products_type",
+          "userDefined": true,
+          "alias": "products_type",
+          "meta": "@products_type"
+        },
+        {
+          "text": " không",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "486f495f-36c4-4188-ab57-f1d0a3439ce8",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

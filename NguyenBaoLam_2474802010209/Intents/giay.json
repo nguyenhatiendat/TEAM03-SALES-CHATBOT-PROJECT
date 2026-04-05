@@ -1,0 +1,97 @@
+{
+  "id": "89db4e66-2c68-4536-bbdf-8c2464ae4e6e",
+  "name": "giay",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "items_type",
+          "dataType": "@items_type",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$items_type",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Shop có bán $items_type với đủ loại size từ S đến XL, với mức giá 699.000đ và đang được trợ giá còn 499.000đ."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Giày thể thao unisex",
+          "userDefined": true,
+          "alias": "items_type",
+          "meta": "@items_type"
+        }
+      ],
+      "count": 0,
+      "id": "fdae52d1-1357-491e-ada7-05bf121cc7a4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Giày thể thao",
+          "userDefined": false,
+          "alias": "items_type",
+          "meta": "@items_type"
+        }
+      ],
+      "count": 0,
+      "id": "cf125803-5f2c-4606-9b7c-f5afe459aa1a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Giày",
+          "userDefined": true,
+          "alias": "items_type",
+          "meta": "@items_type"
+        }
+      ],
+      "count": 0,
+      "id": "ddd857b1-def2-4099-8265-e19c525b3032",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

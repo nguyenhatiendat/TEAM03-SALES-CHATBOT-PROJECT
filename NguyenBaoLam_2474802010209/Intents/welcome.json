@@ -1,0 +1,189 @@
+{
+  "id": "0d9743a2-e999-40bf-a8a3-2db23d6c0928",
+  "name": "welcome",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Chào bạn! Tôi là trợ lý ảo của shop 3 Thần Đằng. Bạn cần tư vấn về áo dài, quần, đầm hay phụ kiện ạ?"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hello",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "15ec2954-8a40-435e-b3a1-d39c01625995",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hi",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "fccc8122-bd3c-4461-ba56-6fd9c8644219",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "xin chào",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7d67b65f-5380-49a6-b06e-30c5e6a569af",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "chào bạn",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a99cabbc-b62e-4548-8ec7-d6305d73c538",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "chào cậu",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "cd80ee67-6e17-47c9-b67d-4689d9a905c4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "chào đằng ấy",
+          "userDefined": false
+        }
+      ],
+      "count": 1,
+      "id": "7a1af887-7576-4dcb-b644-6fa00d00ec98",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "xin chào, lại là tôi đây",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ef9df2c4-35b1-432c-8b55-ef698c0881d3",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "lâu lắm không gặp",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "10bf92f9-18d1-4121-9c6e-9e42befaee89",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "chào nhé",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e52f6da4-a027-41c4-bea7-ae79ae1f3fc6",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "chào mừng bạn",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "5b82a9cf-dd6c-4ced-8a81-3eea2057dc1a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "chào",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "3f2c0127-b149-40be-b637-cd8f131f96ad",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "xin chào nhé",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "fb3e634b-cd59-47a6-a455-0cea6752161b",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

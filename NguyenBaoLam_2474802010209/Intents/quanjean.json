@@ -1,0 +1,111 @@
+{
+  "id": "3217d961-522c-4859-8577-c32de0400f23",
+  "name": "quanjean",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "items_type",
+          "dataType": "@items_type",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$items_type",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Shop có bán $items_type với đủ loại size từ S đến XL, với mức giá 699.000đ và đang được trợ giá còn 499.000đ."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Quần jean ống rộng nam",
+          "userDefined": true,
+          "alias": "items_type",
+          "meta": "@items_type"
+        }
+      ],
+      "count": 0,
+      "id": "3e446cbf-039f-414f-a959-9334a7e2cc92",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Quần jean nam ông rộng",
+          "userDefined": false,
+          "alias": "items_type",
+          "meta": "@items_type"
+        }
+      ],
+      "count": 0,
+      "id": "4878648b-afba-45cc-900d-ddc6d4565a2d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Quần jean ống rộng",
+          "userDefined": false,
+          "alias": "items_type",
+          "meta": "@items_type"
+        }
+      ],
+      "count": 0,
+      "id": "aac96d96-2500-4cbc-bedf-7d1518fac069",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Quần jean nam",
+          "userDefined": false,
+          "alias": "items_type",
+          "meta": "@items_type"
+        }
+      ],
+      "count": 0,
+      "id": "f1ab83e8-afe5-445b-8a9c-8be8dd6e504b",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

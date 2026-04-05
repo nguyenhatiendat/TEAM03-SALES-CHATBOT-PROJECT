@@ -1,0 +1,139 @@
+{
+  "id": "98213279-f08d-4d44-bf66-4ab7a19a7a08",
+  "name": "aothunnam",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "items_type",
+          "dataType": "@items_type",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$items_type",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Shop có bán $items_type với đủ loại size từ S đến XL, với mức giá 399.000đ và đang được trợ giá còn 289.000đ."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Áo thun cổ tròn nam cao cấp",
+          "userDefined": true,
+          "alias": "items_type",
+          "meta": "@items_type"
+        }
+      ],
+      "count": 0,
+      "id": "a13eb96d-af00-45f2-84ae-349e4f897bf9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Áo thun cổ tròn cao cấp",
+          "userDefined": true,
+          "alias": "items_type",
+          "meta": "@items_type"
+        }
+      ],
+      "count": 0,
+      "id": "3367d081-47fa-4648-9703-42185a0070e0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Áo thun cổ tròn nam",
+          "userDefined": true,
+          "alias": "items_type",
+          "meta": "@items_type"
+        }
+      ],
+      "count": 0,
+      "id": "863b41fb-f48d-42e8-a008-8558dfcca2c6",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Áo thun nam cổ tròn cao cấp",
+          "userDefined": true,
+          "alias": "items_type",
+          "meta": "@items_type"
+        }
+      ],
+      "count": 0,
+      "id": "d4b9c657-2565-4365-a28b-ad22c88d6c3b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Áo thun cổ tròn",
+          "userDefined": false,
+          "alias": "items_type",
+          "meta": "@items_type"
+        }
+      ],
+      "count": 0,
+      "id": "919b29b0-3bb1-4500-a0a1-92974a5457c0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Áo thun nam",
+          "userDefined": false,
+          "alias": "items_type",
+          "meta": "@items_type"
+        }
+      ],
+      "count": 0,
+      "id": "0d46084e-0211-49c3-8ecf-b731fe752192",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

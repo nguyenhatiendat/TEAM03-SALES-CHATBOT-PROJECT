@@ -1,0 +1,125 @@
+{
+  "id": "1481dce9-5aea-499b-b1f8-7f1957fc55ec",
+  "name": "shipping",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "🚚 Shop 3 Thần Đằng giao hàng toàn quốc!\n- Nội thành TP.HCM: 20.000đ - 30.000đ\n- Các tỉnh: 30.000đ - 50.000đ\n- Miễn phí ship cho đơn hàng trên 1.000.000đ\n- Thời gian giao: 2-4 ngày"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ship",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "21b5fa6e-3e9d-4801-b03d-b36bd68c80ef",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "giao hàng tận nơi",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "278bb693-88cc-4255-bb7f-b39fe99d7c7f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ship về nhà",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "50e0c9db-e882-41c4-b197-70babb31a006",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "vận chuyển",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "227f2fb3-c0a3-4c11-b655-53e4ad2e4397",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "phí ship bao nhiêu",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "bcdcdc34-5bb7-4db4-8f56-a68ad9ad6f08",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "giao hàng thế nào",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "9c4293a1-5faf-48d3-9b78-46c4b0fb4960",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ship không",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1d0fb1fc-2d2d-4a78-b16a-ae5ad18c387c",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

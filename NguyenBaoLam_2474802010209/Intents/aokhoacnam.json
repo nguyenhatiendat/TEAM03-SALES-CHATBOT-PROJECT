@@ -1,0 +1,97 @@
+{
+  "id": "a5d40bf2-3ce5-4bf8-af58-b22e3b13923a",
+  "name": "aokhoacnam",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "items_type",
+          "dataType": "@items_type",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$items_type",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Shop có bán $items_type với đủ loại size từ S đến XL, với mức giá 1.050.000đ và đang được trợ giá còn 799.000đ."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Áo khoác dáng dài",
+          "userDefined": true,
+          "alias": "items_type",
+          "meta": "@items_type"
+        }
+      ],
+      "count": 0,
+      "id": "c56a214b-cdf3-4e58-81a3-fad6d5bb8a64",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Áo khoác nam dáng dài",
+          "userDefined": false,
+          "alias": "items_type",
+          "meta": "@items_type"
+        }
+      ],
+      "count": 0,
+      "id": "a175fedd-98d1-4a31-aa9b-d0952b17e78f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Áo khoác nam",
+          "userDefined": false,
+          "alias": "items_type",
+          "meta": "@items_type"
+        }
+      ],
+      "count": 0,
+      "id": "6c7f1bd9-511e-4dc7-b241-339695dd6a62",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

@@ -1,0 +1,185 @@
+{
+  "id": "7ba2a80d-580a-48e2-b40a-6f393d1aac58",
+  "name": "phukien",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Shop có những loại phụ kiện như: Giày thể thao unisex, Túi tote canvas unisex, Mũ lưỡi trai unisex, Thắt lưng da bò."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại dây nịt nào?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "fddfed6a-1ac0-4945-b566-35e8beb981fd",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại dây nịt nào",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "bd3bff7e-d4a4-4f35-9f4d-2a2897c0d065",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại thắt lưng nào?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "0ebf31e4-30f7-46e0-9ef6-f945b3c86498",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại thắt lưng nào",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "647392ac-186a-46d2-a284-c4e72c04dd82",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại giày nào?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "33f4d75e-4a8e-4577-aace-7933d73f9b3c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại giày nào",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "bd900393-cf06-4297-ac1d-e24344ad9573",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại túi nào?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "32dffa0d-852b-4e62-9d5a-c86d232150aa",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại túi nào",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "13302305-cb50-4a7d-992b-fbd645a89f83",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại mũ nào?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e22516fb-a79f-4418-bbca-60fa35831a09",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại mũ nào",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "07b0791d-43ed-4a34-a889-36e81ad708cc",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại phụ kiện nào?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b86f7b5e-49b7-4707-8f80-56c88d51007a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại phụ kiện nào",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "870d5c0f-1055-4c71-92ff-27aa46ed2453",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

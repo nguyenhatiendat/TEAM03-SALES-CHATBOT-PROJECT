@@ -1,0 +1,38 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "customer_type",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "nam",
+      "synonyms": [
+        "nam",
+        "đàn ông",
+        "nam giới"
+      ]
+    },
+    {
+      "value": "nữ",
+      "synonyms": [
+        "nữ",
+        "phụ nữ",
+        "nữ giới"
+      ]
+    },
+    {
+      "value": "trẻ em",
+      "synonyms": [
+        "trẻ em",
+        "con nít",
+        "trẻ nhỏ",
+        "bé trai",
+        "bé gái",
+        "em bé"
+      ]
+    }
+  ],
+  "id": "5337d8b2-ebca-4355-b5a2-d072694df531",
+  "isOverridable": false
+}

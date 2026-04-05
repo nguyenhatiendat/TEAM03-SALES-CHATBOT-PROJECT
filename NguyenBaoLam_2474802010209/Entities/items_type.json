@@ -1,0 +1,162 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "items_type",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "Chân váy xếp ly nữ",
+      "synonyms": [
+        "Chân váy xếp ly",
+        "Chân váy xếp ly nữ",
+        "Chân váy"
+      ]
+    },
+    {
+      "value": "Áo len cổ lọ nữ",
+      "synonyms": [
+        "Áo len cổ lọ",
+        "Áo len cổ lọ nữ",
+        "Áo len"
+      ]
+    },
+    {
+      "value": "Sơ mi nam linen cao cấp",
+      "synonyms": [
+        "Sơ mi nam linen cao cấp",
+        "Sơ mi nam",
+        "Sơ mi linen",
+        "Sơ mi linen cao cấp",
+        "Áo sơ mi nam",
+        "Áo sơ mi nam linen cao cấp",
+        "Áo sơ mi linen",
+        "Áo sơ mi linen cao cấp",
+        "Áo sơ mi cao cấp",
+        "Sơ mi cao cấp"
+      ]
+    },
+    {
+      "value": "Giày thể thao unisex",
+      "synonyms": [
+        "Giày thể thao unisex",
+        "Giày thể thao",
+        "Giày"
+      ]
+    },
+    {
+      "value": "Áo thun nam cổ tròn cao cấp",
+      "synonyms": [
+        "Áo thun nam cổ tròn cao cấp",
+        "Áo thun nam",
+        "Áo thun cổ tròn",
+        "Áo thun cổ tròn nam",
+        "Áo thun cổ tròn nam cao cấp",
+        "Áo thun cổ tròn cao cấp"
+      ]
+    },
+    {
+      "value": "Túi tote canvas cao cấp",
+      "synonyms": [
+        "Túi tote canvas cao cấp",
+        "Túi tote canvas",
+        "Túi tote",
+        "Túi"
+      ]
+    },
+    {
+      "value": "Đầm suông nữ công sở",
+      "synonyms": [
+        "Đầm suông nữ công sở",
+        "Đầm suông công sở",
+        "Đầm suông nữ",
+        "Đầm suông",
+        "Đầm suông công sở nữ",
+        "Đầm công sở",
+        "Đầm công sở nữ"
+      ]
+    },
+    {
+      "value": "Quần tây nam ống côn",
+      "synonyms": [
+        "Quần tây nam ống côn",
+        "Quần tây nam",
+        "Quần tây ống côn"
+      ]
+    },
+    {
+      "value": "Áo khoác nam dáng dài",
+      "synonyms": [
+        "Áo khoác nam dáng dài",
+        "Áo khoác nam",
+        "Áo khoác dáng dài"
+      ]
+    },
+    {
+      "value": "Áo khoác gió bé",
+      "synonyms": [
+        "Áo khoác gió bé",
+        "Áo khoác gió",
+        "Áo khoác bé"
+      ]
+    },
+    {
+      "value": "Quần jean nam ống rộng",
+      "synonyms": [
+        "Quần jean nam ống rộng",
+        "Quần jean ống rộng",
+        "Quần jean nam",
+        "Quần jean ống rộng nam"
+      ]
+    },
+    {
+      "value": "Váy bé gái công chúa",
+      "synonyms": [
+        "Váy bé gái công chúa",
+        "Váy bé gái",
+        "Váy công chúa"
+      ]
+    },
+    {
+      "value": "Váy hoa nhí nữ tính",
+      "synonyms": [
+        "Váy hoa nhí nữ tính",
+        "Váy hoa nhí"
+      ]
+    },
+    {
+      "value": "Áo thun bé trai",
+      "synonyms": [
+        "Áo thun bé trai",
+        "Áo thun cho bé"
+      ]
+    },
+    {
+      "value": "Mũ lưỡi trai unisex",
+      "synonyms": [
+        "Mũ lưỡi trai unisex",
+        "Mũ lưỡi trai",
+        "Mũ"
+      ]
+    },
+    {
+      "value": "Thắt lưng da bò",
+      "synonyms": [
+        "Thắt lưng da bò",
+        "Thắt lưng",
+        "Dây nịt",
+        "Nịt"
+      ]
+    },
+    {
+      "value": "Áo sơ mi nữ tay bồng",
+      "synonyms": [
+        "Áo sơ mi nữ tay bồng",
+        "Áo sơ mi nữ",
+        "Áo sơ mi tay bồng"
+      ]
+    }
+  ],
+  "id": "22bef512-0605-4ddf-ba70-52410fabd182",
+  "isOverridable": false
+}
