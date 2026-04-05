@@ -1,0 +1,65 @@
+{
+  "id": "a4a053a7-2fed-4b90-9ff7-dc2f43c51cc1",
+  "name": "ao",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Shop có những loại áo như: Áo len cổ lọ nữ, Áo sơ mi nam linen cao cấp, Áo thun nam cổ tròn cao cấp, Áo khoác nam dáng dài, Áo khoác gió bé và Áo thun bé trai."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại áo nào?",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "5571b054-4652-48f2-b7a6-de4479fe01e2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Có những loại áo nào",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4d7c9f0f-1b28-49a8-95a5-cd57c7d75e02",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

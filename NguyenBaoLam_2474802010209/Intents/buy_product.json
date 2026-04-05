@@ -1,0 +1,101 @@
+{
+  "id": "01855005-d9cf-411d-8723-b4179b4c630a",
+  "name": "buy_product",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Bạn vui lòng thêm sản phẩm vào giỏ hàng và tiến hành thanh toán. Nếu cần hỗ trợ, hãy gọi hotline 0977 990 799 ạ!"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "mua hàng",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c7ed54c7-73e7-4fa7-896c-4bd6b8ac15d7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d2624594-571b-4f6b-b656-cd695bdc494b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "cho tôi đặt",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "00a84853-9042-4f3b-b053-34f35aebd278",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "đặt hàng",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "17c4adaf-8ef5-40a4-8a52-2294ac7ae3c5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "tôi muốn mua",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "20f8e3f3-a526-42a6-9e21-6c03aa9fd5f6",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

@@ -1,0 +1,101 @@
+{
+  "id": "cce2990c-6dbb-4bf5-9c03-4ce24cdd2a17",
+  "name": "ask_order_status",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "📦 ĐỂ KIỂM TRA TRẠNG THÁI ĐƠN HÀNG:\n\nBạn vui lòng cung cấp MÃ ĐƠN HÀNG (đã gửi qua email/SMS sau khi đặt).\n\nHoặc liên hệ hotline: 0977 990 799 để được hỗ trợ nhanh nhất ạ!\n\n📌 Trạng thái đơn hàng có thể là:\n- Đang xử lý (0-2h sau đặt)\n- Đang đóng gói (2-6h)\n- Đang giao hàng (1-3 ngày)\n- Đã giao thành công"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "theo dõi đơn hàng",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d5253666-f846-4d2f-9ae1-0bd1d7f05ec8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "order status",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2d7328b3-6da7-4936-b255-151a4b811ed8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "khi nào nhận được hàng",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "efba6fb8-4594-4863-9e2a-9434ff22b781",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "đơn hàng của tôi đến đâu rồi",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "bac12092-a469-4962-83d2-2ea6e7385eb9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "kiểm tra đơn hàng",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "fb0b44a8-c6c4-4892-af38-0cebfd7de488",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

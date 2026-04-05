@@ -1,0 +1,101 @@
+{
+  "id": "a3c6681b-9c43-43e8-b76f-268a31a80fc8",
+  "name": "ask_price",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Sản phẩm của shop 3 Thần Đằng có giá từ 189.000đ đến 1.050.000đ. Bạn muốn xem dòng sản phẩm nào ạ?"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "giá",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d77f9884-0601-42ba-b4f2-758f76cf674f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "có bao nhiêu tiền",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "475de71f-3863-4316-9433-74b0e58b5f5e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "giá rẻ không",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1ddeb895-bfdd-4236-bfe5-6044aeba16e3",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "sản phẩm này giá thế nào",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "21552573-f3a7-4fe4-bce6-a0cf3f8013f6",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "giá bao nhiêu",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a61f7277-2db9-48c2-8486-24dbd155ad84",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}
