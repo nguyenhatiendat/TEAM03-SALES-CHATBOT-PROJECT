@@ -39,11 +39,11 @@ Website bán hàng tích hợp chatbot hỗ trợ tư vấn khách hàng tự đ
 |------------------------|:------------------:|:--------------:|:--------------:|
 | Giao diện (HTML, CSS)  |         X          |                |                |
 | Xử lý JavaScript       |         X          |                |                |
-| Tích hợp chatbot       |         X          |                |                |
+| Tích hợp chatbot       |         X          |       x        |                |
 | Xây dựng chatbot       |                    |       X        |                |
 | Intents & training     |                    |       X        |                |
 | Firebase (Firestore)   |         X          |                |                |
-| Deploy Firebase        |         X          |                |                |
+| Deploy Firebase        |         X          |                |       x        |
 | Dữ liệu & hình ảnh     |                    |                |       X        |
 | Báo cáo                |                    |                |       X        |
 | Video demo             |                    |                |       X        |
