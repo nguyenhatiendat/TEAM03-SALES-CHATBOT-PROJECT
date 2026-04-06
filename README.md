@@ -26,16 +26,26 @@ Website bán hàng tích hợp chatbot hỗ trợ tư vấn khách hàng tự đ
 ---
 
 ## ⚙️ Chức năng chính
-- 🛍️ Xem sản phẩm
-- 🤖 Chatbot tư vấn tự động
-- 🔐 Đăng nhập / đăng ký
-- 🧾 Quản lý dữ liệu bằng Firebase
+🛍️ Hiển thị và tìm kiếm sản phẩm
+🤖 Chatbot tư vấn tự động (tích hợp Dialogflow)
+🔐 Đăng nhập / đăng ký người dùng
+🧾 Quản lý dữ liệu bằng Firestore
+☁️ Deploy hệ thống trên Firebase Hosting
 
 ---
 
 ## 👥 Thành viên nhóm
-|      Họ và tên     |      MSSV     |       Vai trò       |
-|--------------------|---------------|---------------------|
-| Nguyễn Hà Tiến Đạt | 2474802010077 | Frontend + Firebase |
-| Nguyễn Bảo Lâm     | 2474802010209 |       Backend       |
-| Bùi Thanh Hiếu     | 2474802010111 |        UI/UX        |
+|        Công việc       | Nguyễn Hà Tiến Đạt | Nguyễn Bảo Lâm | Bùi Thanh Hiếu |
+|------------------------|:------------------:|:--------------:|:--------------:|
+| Giao diện (HTML, CSS)  |         X          |                |                |
+| Xử lý JavaScript       |         X          |                |                |
+| Tích hợp chatbot       |         X          |                |                |
+| Xây dựng chatbot       |                    |       X        |                |
+| Intents & training     |                    |       X        |                |
+| Firebase (Firestore)   |         X          |                |                |
+| Deploy Firebase        |         X          |                |                |
+| Dữ liệu & hình ảnh     |                    |                |       X        |
+| Báo cáo                |                    |                |       X        |
+| Video demo             |                    |                |       X        |
+| Kiểm thử hệ thống      |         X          |       X        |       X        |
+| GitHub (commit)        |         X          |       x        |       X        |
