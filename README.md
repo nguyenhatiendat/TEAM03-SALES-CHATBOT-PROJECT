@@ -35,14 +35,14 @@ Website bán hàng tích hợp chatbot hỗ trợ tư vấn khách hàng tự đ
 ---
 
 ## 👥 Thành viên nhóm
-| Công việc                    | Nguyễn Hà Tiến Đạt | Nguyễn Bảo Lâm | Bùi Thanh Hiếu |
-|------------------------------|:------------------:|:--------------:|:--------------:|
-| Frontend (HTML, CSS, JS)     |         X          |                |                |
-| Chatbot (Dialogflow)         |                    |       X        |                |
-| Firebase (Firestore, Auth)   |         X          |                |                |
-| Dữ liệu & hình ảnh           |                    |                |       X        |
-| Video demo                   |                    |                |       X        |
-| Báo cáo                      |         X          |       X        |       X        |
-| Deploy Firebase Hosting      |         X          |                |                |
-| Kiểm thử hệ thống            |         X          |       X        |       X        |
-| Commit GitHub                |         X          |       X        |       X        |
+| Công việc                | Nguyễn Hà Tiến Đạt | Nguyễn Bảo Lâm | Bùi Thanh Hiếu |
+|--------------------------|:------------------:|:--------------:|:--------------:|
+| Frontend (HTML, CSS, JS) |         X          |                |                |
+| Backend (Firebase)       |         X          |                |                |
+| Chatbot (Dialogflow)     |                    |       X        |                |
+| Dữ liệu & hình ảnh       |                    |                |       X        |
+| Báo cáo                  |         X          |       X        |       X        |
+| Video demo               |                    |                |       X        |
+| Deploy hệ thống          |         X          |       X        |       X        |
+| Kiểm thử hệ thống        |         X          |       X        |       X        |
+| Commit GitHub            |         X          |       X        |       X        |
