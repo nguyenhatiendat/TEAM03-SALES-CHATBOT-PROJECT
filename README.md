@@ -20,7 +20,8 @@ Website bán hàng tích hợp chatbot hỗ trợ tư vấn khách hàng tự đ
 
 ## 📷 Giao diện
 ![Home](./images/home.png)
-![Chatbot](./images/chatbot.png)
+![Chatbot]<img width="389" height="667" alt="image" src="https://github.com/user-attachments/assets/c4bbddcc-399d-43c3-bea1-fdad9d279266" />
+
 
 ---
 
