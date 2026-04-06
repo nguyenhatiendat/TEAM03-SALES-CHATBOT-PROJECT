@@ -35,17 +35,14 @@ Website bán hàng tích hợp chatbot hỗ trợ tư vấn khách hàng tự đ
 ---
 
 ## 👥 Thành viên nhóm
-|        Công việc       | Nguyễn Hà Tiến Đạt | Nguyễn Bảo Lâm | Bùi Thanh Hiếu |
-|------------------------|:------------------:|:--------------:|:--------------:|
-| Giao diện (HTML, CSS)  |         X          |                |                |
-| Xử lý JavaScript       |         X          |                |                |
-| Tích hợp chatbot       |         X          |       x        |                |
-| Xây dựng chatbot       |                    |       X        |                |
-| Intents & training     |                    |       X        |                |
-| Firebase (Firestore)   |         X          |                |                |
-| Deploy Firebase        |         X          |                |       x        |
-| Dữ liệu & hình ảnh     |                    |                |       X        |
-| Báo cáo                |                    |                |       X        |
-| Video demo             |                    |                |       X        |
-| Kiểm thử hệ thống      |         X          |       X        |       X        |
-| GitHub (commit)        |         X          |       x        |       X        |
+| Công việc                    | Nguyễn Hà Tiến Đạt | Nguyễn Bảo Lâm | Bùi Thanh Hiếu |
+|------------------------------|:------------------:|:--------------:|:--------------:|
+| Frontend (HTML, CSS, JS)     |         X          |                |                |
+| Chatbot (Dialogflow)         |                    |       X        |                |
+| Firebase (Firestore, Auth)   |         X          |                |                |
+| Dữ liệu & hình ảnh           |                    |                |       X        |
+| Video demo                   |                    |                |       X        |
+| Báo cáo                      |         X          |       X        |       X        |
+| Deploy Firebase Hosting      |         X          |                |                |
+| Kiểm thử hệ thống            |         X          |       X        |       X        |
+| Commit GitHub                |         X          |       X        |       X        |
