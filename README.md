@@ -7,7 +7,7 @@ Website bán hàng tích hợp chatbot hỗ trợ tư vấn khách hàng tự đ
 
 ## 🚀 Demo
 👉 Link website: https://team3-3than-dang-chatbot.web.app 
-👉 Video demo: (nếu có thì thêm link YouTube)
+👉 Video demo: https://drive.google.com/file/d/1dzcjp4j_8FyEXo2O4qKdLMnICcfTC7zY/view?usp=sharing
 
 ---
 
