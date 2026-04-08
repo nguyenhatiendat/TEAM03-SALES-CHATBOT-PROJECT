@@ -49,7 +49,7 @@ CHATBOT
 | Frontend (HTML, CSS, JS)      |         X          |                |                |
 | Backend (Firebase)            |         X          |                |                |
 | Chatbot (Dialogflow)          |                    |       X        |                |
-| Tích hợp Chatbot/Integration  |                    |       X        |                |
+| Tích hợp Chatbot/Integration  |         X          |       X        |                |
 | Dữ liệu & hình ảnh            |                    |                |       X        |
 | Báo cáo                       |         X          |       X        |       X        |
 | Video demo                    |                    |                |       X        |
