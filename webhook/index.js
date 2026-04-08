@@ -21,22 +21,46 @@ app.post('/webhook', async (req, res) => {
     let responseText = '';
     
     try {
+        // ========== WELCOME INTENT ==========
         if (intentName === 'Default Welcome Intent') {
             responseText = 'Chào mừng bạn đến với cửa hàng thời trang! Bạn muốn xem sản phẩm gì ạ?';
         }
-        else if (intentName === 'bestseller') {
-            const snapshot = await db.collection('products')
-                .orderBy('rating', 'desc')
-                .limit(1)
-                .get();
-            
-            if (!snapshot.empty) {
-                const product = snapshot.docs[0].data();
-                responseText = `🏆 Best seller của shop là ${product.name} với giá ${product.price?.toLocaleString()}đ. Đánh giá ${product.rating}⭐!`;
-            } else {
-                responseText = 'Hiện chưa có dữ liệu sản phẩm.';
+        
+        // ========== BESTSELLER INTENT ==========
+        else if (intentName === 'BESTSELLER' || intentName === 'bestseller') {
+            try {
+                const snapshot = await db.collection('products')
+                    .orderBy('rating', 'desc')
+                    .limit(1)
+                    .get();
+                
+                if (!snapshot.empty) {
+                    const product = snapshot.docs[0].data();
+                    const price = product.price?.toLocaleString() || 'liên hệ';
+                    const rating = product.rating || '?';
+                    responseText = `🏆 Best seller: ${product.name} - ${price}đ ⭐${rating}`;
+                } else {
+                    const allProducts = await db.collection('products').limit(1).get();
+                    if (!allProducts.empty) {
+                        const product = allProducts.docs[0].data();
+                        responseText = `🏆 Sản phẩm nổi bật: ${product.name} giá ${product.price?.toLocaleString()}đ!`;
+                    } else {
+                        responseText = 'Chưa có dữ liệu sản phẩm.';
+                    }
+                }
+            } catch (error) {
+                console.error('Lỗi bestseller:', error.message);
+                const allProducts = await db.collection('products').limit(1).get();
+                if (!allProducts.empty) {
+                    const product = allProducts.docs[0].data();
+                    responseText = `${product.name} giá ${product.price?.toLocaleString()}đ là sản phẩm nổi bật!`;
+                } else {
+                    responseText = 'Xin lỗi, hiện tại tôi chưa có thông tin sản phẩm.';
+                }
             }
         }
+        
+        // ========== SEARCH BY CATEGORY ==========
         else if (intentName === 'search_by_category') {
             const category = parameters?.category;
             const snapshot = await db.collection('products')
@@ -51,6 +75,8 @@ app.post('/webhook', async (req, res) => {
                 responseText = `Hiện chưa có sản phẩm cho ${category === 'nam' ? 'nam' : 'nữ'}.`;
             }
         }
+        
+        // ========== CHECK STOCK ==========
         else if (intentName === 'check_stock') {
             const productId = parameters?.product_id;
             const docRef = await db.collection('products').doc(productId).get();
@@ -62,9 +88,13 @@ app.post('/webhook', async (req, res) => {
                 responseText = 'Không tìm thấy sản phẩm này.';
             }
         }
+        
+        // ========== FALLBACK INTENT ==========
         else if (intentName === 'Default Fallback Intent') {
             responseText = 'Xin lỗi, tôi không hiểu ý bạn. Bạn có thể nói lại được không?';
         }
+        
+        // ========== DEFAULT ==========
         else {
             responseText = 'Tôi chưa được lập trình để trả lời câu này. Xin lỗi bạn nhé!';
         }
