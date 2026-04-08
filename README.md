@@ -17,8 +17,9 @@ Website bán hàng tích hợp chatbot hỗ trợ tư vấn khách hàng tự đ
 
 ## 🛠️ Công nghệ sử dụng
 - HTML, CSS, JavaScript
-- Firebase (Authentication, Firestore)
-- Dialogflow (Chatbot AI)
+- Firebase (Authentication, Firestore): https://firebase.google.com/?authuser=1
+- Dialogflow (Chatbot AI): https://dialogflow.cloud.google.com/
+- Sử dụng https://render.com/ để tích hợp webhook
 
 ---
 
@@ -41,7 +42,7 @@ CHATBOT
 🤖 Chatbot tư vấn tự động (tích hợp Dialogflow)
 🔐 Đăng nhập / đăng ký người dùng
 🧾 Quản lý dữ liệu bằng Firestore
-☁️ Deploy hệ thống trên Firebase Hosting
+☁️ Deploy hệ thống trên Firebase Hosting, Functions
 
 ---
 
@@ -49,9 +50,8 @@ CHATBOT
 | Công việc                     | Nguyễn Hà Tiến Đạt | Nguyễn Bảo Lâm | Bùi Thanh Hiếu |
 |-------------------------------|:------------------:|:--------------:|:--------------:|
 | Frontend (HTML, CSS, JS)      |         X          |                |                |
-| Backend (Firebase)            |         X          |                |                |
+| Backend (Firebase, Webhook)   |         X          |                |                |
 | Chatbot (Dialogflow)          |                    |       X        |                |
-| Tích hợp Chatbot/Integration  |         X          |       X        |                |
 | Dữ liệu & hình ảnh            |                    |                |       X        |
 | Báo cáo                       |         X          |       X        |       X        |
 | Video demo                    |                    |                |       X        |
