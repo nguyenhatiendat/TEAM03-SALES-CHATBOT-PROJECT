@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theo dõi đơn hàng - 3 Thần Đằng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="track-order.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <style>
+        df-messenger {
+            --df-messenger-bot-message: #e4e6eb;
+            --df-messenger-button-titlebar-color: #1a1a1a;
+            --df-messenger-chat-background-color: #ffffff;
+            --df-messenger-font-color: #1a1a1a;
+            --df-messenger-send-icon: #0084ff;
+            --df-messenger-user-message: #0084ff;
+            --df-messenger-chat-window-width: 380px;
+            --df-messenger-chat-window-height: 550px;
+            --df-messenger-border-radius: 16px;
+            z-index: 999;
+            bottom: 20px;
+            right: 20px;
+        }
+        df-messenger .df-messenger-bot-message {
+            background: #e4e6eb;
+            color: #1a1a1a;
+            border-radius: 18px;
+            padding: 10px 14px;
+        }
+        df-messenger .df-messenger-user-message {
+            background: #0084ff;
+            color: white;
+            border-radius: 18px;
+            padding: 10px 14px;
+        }
+        @media (max-width: 768px) {
+            df-messenger {
+                --df-messenger-chat-window-width: 320px;
+                --df-messenger-chat-window-height: 480px;
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo"><a href="index.html" style="font-family: 'Orbitron', monospace; font-size: 26px;">3 THẦN ĐẰNG</a></div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="index.html">NAM</a></li>
+                    <li><a href="index.html">NỮ</a></li>
+                    <li><a href="index.html">TRẺ EM</a></li>
+                    <li><a href="index.html">PHỤ KIỆN</a></li>
+                    <li><a href="orders.html">LỊCH SỬ ĐƠN HÀNG</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="login.html" class="icon" id="userIcon"><i class="far fa-user"></i></a>
+                <a href="cart.html" class="icon cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+                <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="track-page">
+        <div class="track-container">
+            <h1>THEO DÕI ĐƠN HÀNG</h1>
+            <p class="track-notice">Nhập mã đơn hàng để kiểm tra trạng thái giao hàng</p>
+
+            <div class="track-form">
+                <input type="text" id="orderCode" placeholder="Nhập mã đơn hàng (VD: VOOkyJN5iR...)" class="track-input">
+                <button onclick="trackOrder()" class="track-btn"><i class="fas fa-search"></i> TRA CỨU ĐƠN HÀNG</button>
+            </div>
+
+            <div id="trackResult" class="track-result" style="display: none;"></div>
+
+            <div class="order-list-section">
+                <h3>📋 ĐƠN HÀNG GẦN ĐÂY</h3>
+                <div id="recentOrders" class="recent-orders"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="container">
+            <div class="feature-item"><i class="fas fa-truck"></i><h4>Miễn phí giao hàng</h4><p>Cho đơn hàng từ 1.000.000đ</p></div>
+            <div class="feature-item"><i class="fas fa-money-bill-wave"></i><h4>Thanh toán COD</h4><p>Thanh toán khi nhận hàng</p></div>
+            <div class="feature-item"><i class="fas fa-gem"></i><h4>Khách hàng VIP</h4><p>Ưu đãi dành cho khách VIP</p></div>
+            <div class="feature-item"><i class="fas fa-shield-alt"></i><h4>Hỗ trợ bảo hành</h4><p>Đổi sửa tại tất cả store</p></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright"><p>&copy; 2026 3 Thần Đằng. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <!-- Modal chi tiết đơn hàng -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>CHI TIẾT ĐƠN HÀNG</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div id="orderDetail"></div>
+        </div>
+    </div>
+
+    <df-messenger intent="WELCOME" chat-title="3 Thần Đằng" agent-id="eff46fad-f2ab-46c1-962e-0dfeacc3ae0b" language-code="vi"></df-messenger>
+
+    <script type="module" src="track-order.js"></script>
+</body>
+</html>
