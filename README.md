@@ -44,14 +44,13 @@ CHATBOT
 ---
 
 ## 👥 Thành viên nhóm
-| Công việc                | Nguyễn Hà Tiến Đạt | Nguyễn Bảo Lâm | Bùi Thanh Hiếu |
-|--------------------------|:------------------:|:--------------:|:--------------:|
-| Frontend (HTML, CSS, JS) |         X          |                |                |
-| Backend (Firebase)       |         X          |                |                |
-| Chatbot (Dialogflow)     |                    |       X        |                |
-| Dữ liệu & hình ảnh       |                    |                |       X        |
-| Báo cáo                  |         X          |       X        |       X        |
-| Video demo               |                    |                |       X        |
-| Deploy hệ thống          |         X          |       X        |       X        |
-| Kiểm thử hệ thống        |         X          |       X        |       X        |
-| Commit GitHub            |         X          |       X        |       X        |
+| Công việc                     | Nguyễn Hà Tiến Đạt | Nguyễn Bảo Lâm | Bùi Thanh Hiếu |
+|-------------------------------|:------------------:|:--------------:|:--------------:|
+| Frontend (HTML, CSS, JS)      |         X          |                |                |
+| Backend (Firebase)            |         X          |                |                |
+| Chatbot (Dialogflow)          |                    |       X        |                |
+| Tích hợp Chatbot/Intergration |                    |       X        |                |
+| Dữ liệu & hình ảnh            |                    |                |       X        |
+| Báo cáo                       |         X          |       X        |       X        |
+| Video demo                    |                    |                |       X        |
+| Deploy hệ thống               |         X          |       X        |       X        |
