@@ -11,7 +11,7 @@ Website bán hàng tích hợp chatbot hỗ trợ tư vấn khách hàng tự đ
 
 👉 Webhook (backend xử lý) đã được viết code, deploy lên Render.com và kết nối thành công với Dialogflow: https://team03-sales-chatbot-project.onrender.com/
 
-👉 Video demo: https://drive.google.com/file/d/1dzcjp4j_8FyEXo2O4qKdLMnICcfTC7zY/view?usp=sharing
+👉 Video demo: [https://drive.google.com/file/d/1dzcjp4j_8FyEXo2O4qKdLMnICcfTC7zY/view?usp=sharing](https://drive.google.com/file/d/1-AZowl8VkbxG-j7XFpBZtqklcBHKXagq/view?usp=drivesdk)
 
 ---
 
