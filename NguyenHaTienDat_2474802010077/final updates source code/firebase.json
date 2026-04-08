@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "webhook-functions/**"
+    ]
+  },
+  "functions": [
+    {
+      "source": "webhook-functions",
+      "codebase": "webhook"
+    }
+  ]
+}

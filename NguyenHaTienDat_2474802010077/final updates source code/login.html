@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập - 3 Thần Đằng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <style>
+        df-messenger {
+            --df-messenger-bot-message: #e4e6eb;
+            --df-messenger-button-titlebar-color: #1a1a1a;
+            --df-messenger-chat-background-color: #ffffff;
+            --df-messenger-font-color: #1a1a1a;
+            --df-messenger-send-icon: #0084ff;
+            --df-messenger-user-message: #0084ff;
+            --df-messenger-chat-window-width: 380px;
+            --df-messenger-chat-window-height: 550px;
+            --df-messenger-border-radius: 16px;
+            z-index: 999;
+            bottom: 20px;
+            right: 20px;
+        }
+        df-messenger .df-messenger-bot-message { background: #e4e6eb; color: #1a1a1a; border-radius: 18px; }
+        df-messenger .df-messenger-user-message { background: #0084ff; color: white; border-radius: 18px; }
+        @media (max-width: 768px) { df-messenger { --df-messenger-chat-window-width: 320px; --df-messenger-chat-window-height: 480px; } }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo"><a href="index.html">3 THẦN ĐẰNG</a></div>
+            <div class="header-icons">
+                <a href="login.html" class="icon"><i class="far fa-user"></i></a>
+                <a href="cart.html" class="icon cart-icon"><i class="fas fa-shopping-bag"></i><span class="cart-count" id="cartCount">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h2>ĐĂNG NHẬP</h2>
+            <p class="register-link">Nếu bạn chưa có tài khoản, <a href="register.html">đăng ký tại đây</a></p>
+            <form id="loginForm">
+                <div class="form-group"><label>Email của bạn</label><input type="email" id="email" placeholder="Email" required></div>
+                <div class="form-group"><label>Mật khẩu</label><input type="password" id="password" placeholder="Mật khẩu" required></div>
+                <div class="forgot-password"><a href="#">Quên mật khẩu?</a></div>
+                <button type="submit" class="login-btn">ĐĂNG NHẬP</button>
+            </form>
+            <div class="social-login"><p>Hoặc đăng nhập bằng</p><div class="social-icons"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-google-plus-g"></i></a><a href="#"><i class="fab fa-google"></i></a></div></div>
+        </div>
+        <div class="info-box">
+            <h3>Chào mừng bạn đến 3 Thần Đằng</h3>
+            <p>Dịch vụ của 3 Thần Đằng không chỉ đơn giản là thái độ phục vụ của nhân viên tư vấn bán hàng mà thể hiện trong từng sản phẩm.</p>
+            <div class="features-small"><div><i class="fas fa-truck"></i><span>Giao hàng linh hoạt</span></div><div><i class="fas fa-money-bill-wave"></i><span>Thanh toán COD</span></div><div><i class="fas fa-gem"></i><span>Khách hàng VIP</span></div><div><i class="fas fa-shield-alt"></i><span>Hỗ trợ bảo hành</span></div></div>
+        </div>
+    </div>
+
+    <footer class="footer"><div class="container"><div class="copyright"><p>&copy; 2026 3 Thần Đằng</p></div></div></footer>
+
+    <df-messenger intent="WELCOME" chat-title="3 Thần Đằng" agent-id="eff46fad-f2ab-46c1-962e-0dfeacc3ae0b" language-code="vi"></df-messenger>
+
+    <script type="module" src="login.js"></script>
+</body>
+</html>
