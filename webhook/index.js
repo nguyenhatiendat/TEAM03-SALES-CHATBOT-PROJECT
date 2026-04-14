@@ -11,14 +11,37 @@ admin.initializeApp({
 
 const db = admin.firestore();
 
+// ========== HÀM LƯU LỊCH SỬ CHAT ==========
+async function saveChatLog(sessionId, userQuery, botResponse, intentName, status, parameters = null) {
+    try {
+        const logData = {
+            sessionId: sessionId || 'unknown',
+            userQuery: userQuery || '',
+            botResponse: botResponse || '',
+            intent: intentName || 'unknown',
+            status: status || 'success',
+            timestamp: admin.firestore.FieldValue.serverTimestamp()
+        };
+        if (parameters) logData.parameters = parameters;
+        await db.collection('chat_logs').add(logData);
+        console.log('✅ [LOG] Đã lưu lịch sử chat');
+    } catch (error) {
+        console.error('❌ [LOG] Lỗi lưu log:', error.message);
+    }
+}
+
 app.post('/webhook', async (req, res) => {
     const intentName = req.body.queryResult?.intent?.displayName;
     const parameters = req.body.queryResult?.parameters;
+    const userQuery = req.body.queryResult?.queryText;
+    const sessionId = req.body.session;
     
     console.log('Intent:', intentName);
     console.log('Parameters:', parameters);
+    console.log('User query:', userQuery);
     
     let responseText = '';
+    let logStatus = 'success';
     
     try {
         // ========== WELCOME INTENT ==========
@@ -57,6 +80,7 @@ app.post('/webhook', async (req, res) => {
                 } else {
                     responseText = 'Xin lỗi, hiện tại tôi chưa có thông tin sản phẩm.';
                 }
+                logStatus = 'error';
             }
         }
         
@@ -92,15 +116,22 @@ app.post('/webhook', async (req, res) => {
         // ========== FALLBACK INTENT ==========
         else if (intentName === 'Default Fallback Intent') {
             responseText = 'Xin lỗi, tôi không hiểu ý bạn. Bạn có thể nói lại được không?';
+            logStatus = 'fallback';
         }
         
         // ========== DEFAULT ==========
         else {
             responseText = 'Tôi chưa được lập trình để trả lời câu này. Xin lỗi bạn nhé!';
+            logStatus = 'unknown_intent';
         }
+        
+        // ========== LƯU LOG VÀO DATABASE ==========
+        await saveChatLog(sessionId, userQuery, responseText, intentName, logStatus, parameters);
+        
     } catch (error) {
         console.error('Lỗi Firestore:', error);
         responseText = 'Có lỗi xảy ra, vui lòng thử lại sau!';
+        await saveChatLog(sessionId, userQuery, responseText, intentName, 'system_error', parameters);
     }
     
     res.json({ fulfillmentText: responseText });
@@ -108,6 +139,26 @@ app.post('/webhook', async (req, res) => {
 
 app.get('/', (req, res) => {
     res.send('Webhook is running!');
+});
+
+// ========== API XEM LỊCH SỬ CHAT ==========
+app.get('/logs', async (req, res) => {
+    try {
+        const limit = parseInt(req.query.limit) || 10;
+        const snapshot = await db.collection('chat_logs')
+            .orderBy('timestamp', 'desc')
+            .limit(limit)
+            .get();
+        
+        const logs = [];
+        snapshot.forEach(doc => {
+            logs.push({ id: doc.id, ...doc.data() });
+        });
+        
+        res.json({ logs });
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
 });
 
 const PORT = process.env.PORT || 3000;
