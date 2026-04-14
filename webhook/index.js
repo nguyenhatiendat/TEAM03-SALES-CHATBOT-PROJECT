@@ -30,26 +30,27 @@ async function saveChatLog(sessionId, userQuery, botResponse, intentName, status
     }
 }
 
+// ========== WEBHOOK CHÍNH ==========
 app.post('/webhook', async (req, res) => {
     const intentName = req.body.queryResult?.intent?.displayName;
     const parameters = req.body.queryResult?.parameters;
     const userQuery = req.body.queryResult?.queryText;
     const sessionId = req.body.session;
     
-    console.log('Intent:', intentName);
-    console.log('Parameters:', parameters);
-    console.log('User query:', userQuery);
+    console.log('📨 Intent:', intentName);
+    console.log('📝 User:', userQuery);
+    console.log('⚙️ Parameters:', parameters);
     
     let responseText = '';
     let logStatus = 'success';
     
     try {
-        // ========== WELCOME INTENT ==========
+        // ========== 1. WELCOME INTENT ==========
         if (intentName === 'Default Welcome Intent') {
             responseText = 'Chào mừng bạn đến với cửa hàng thời trang! Bạn muốn xem sản phẩm gì ạ?';
         }
         
-        // ========== BESTSELLER INTENT ==========
+        // ========== 2. BESTSELLER INTENT ==========
         else if (intentName === 'BESTSELLER' || intentName === 'bestseller') {
             try {
                 const snapshot = await db.collection('products')
@@ -73,53 +74,99 @@ app.post('/webhook', async (req, res) => {
                 }
             } catch (error) {
                 console.error('Lỗi bestseller:', error.message);
-                const allProducts = await db.collection('products').limit(1).get();
-                if (!allProducts.empty) {
-                    const product = allProducts.docs[0].data();
-                    responseText = `${product.name} giá ${product.price?.toLocaleString()}đ là sản phẩm nổi bật!`;
-                } else {
-                    responseText = 'Xin lỗi, hiện tại tôi chưa có thông tin sản phẩm.';
-                }
+                responseText = 'Xin lỗi, có lỗi khi lấy dữ liệu sản phẩm.';
                 logStatus = 'error';
             }
         }
         
-        // ========== SEARCH BY CATEGORY ==========
+        // ========== 3. SEARCH BY CATEGORY ==========
         else if (intentName === 'search_by_category') {
             const category = parameters?.category;
-            const snapshot = await db.collection('products')
-                .where('category', '==', category)
-                .limit(5)
-                .get();
-            
-            if (!snapshot.empty) {
-                let productList = snapshot.docs.map(doc => doc.data().name).join(', ');
-                responseText = `Sản phẩm cho ${category === 'nam' ? 'nam' : 'nữ'}: ${productList}. Bạn muốn xem chi tiết sản phẩm nào?`;
+            if (!category) {
+                responseText = 'Bạn muốn xem sản phẩm cho nam hay nữ ạ?';
             } else {
-                responseText = `Hiện chưa có sản phẩm cho ${category === 'nam' ? 'nam' : 'nữ'}.`;
+                const snapshot = await db.collection('products')
+                    .where('category', '==', category)
+                    .limit(5)
+                    .get();
+                
+                if (!snapshot.empty) {
+                    let productList = snapshot.docs.map(doc => doc.data().name).join(', ');
+                    responseText = `Sản phẩm cho ${category === 'nam' ? 'nam' : 'nữ'}: ${productList}. Bạn muốn xem chi tiết sản phẩm nào?`;
+                } else {
+                    responseText = `Hiện chưa có sản phẩm cho ${category === 'nam' ? 'nam' : 'nữ'}.`;
+                }
             }
         }
         
-        // ========== CHECK STOCK ==========
+        // ========== 4. CHECK STOCK ==========
         else if (intentName === 'check_stock') {
             const productId = parameters?.product_id;
-            const docRef = await db.collection('products').doc(productId).get();
-            
-            if (docRef.exists) {
-                const stock = docRef.data().stock || 0;
-                responseText = stock > 0 ? `Sản phẩm này còn ${stock} cái trong kho!` : `Rất tiếc, sản phẩm này đã hết hàng.`;
+            if (!productId) {
+                responseText = 'Bạn muốn kiểm tra tồn kho sản phẩm nào ạ?';
             } else {
-                responseText = 'Không tìm thấy sản phẩm này.';
+                const docRef = await db.collection('products').doc(productId).get();
+                if (docRef.exists) {
+                    const stock = docRef.data().stock || 0;
+                    responseText = stock > 0 ? `Sản phẩm này còn ${stock} cái trong kho!` : `Rất tiếc, sản phẩm này đã hết hàng.`;
+                } else {
+                    responseText = 'Không tìm thấy sản phẩm này.';
+                }
             }
         }
         
-        // ========== FALLBACK INTENT ==========
+        // ========== 5. ASK ORDER STATUS ==========
+        else if (intentName === 'ask_order_status') {
+            const orderId = parameters?.order_id;
+            if (!orderId) {
+                responseText = 'Vui lòng cung cấp mã đơn hàng để tôi kiểm tra trạng thái ạ!';
+            } else {
+                const docRef = await db.collection('orders').doc(orderId).get();
+                if (docRef.exists) {
+                    const order = docRef.data();
+                    const statusMap = {
+                        'pending': 'Đang xử lý',
+                        'packing': 'Đang đóng gói',
+                        'shipping': 'Đang giao hàng',
+                        'delivered': 'Đã giao thành công',
+                        'cancelled': 'Đã hủy'
+                    };
+                    const displayStatus = statusMap[order.status] || order.status || 'Đang xử lý';
+                    responseText = `Đơn hàng ${orderId} của bạn đang ở trạng thái: ${displayStatus}. Cảm ơn bạn đã mua hàng!`;
+                } else {
+                    responseText = `Rất tiếc, tôi không tìm thấy đơn hàng có mã ${orderId}. Bạn vui lòng kiểm tra lại!`;
+                }
+            }
+        }
+        
+        // ========== 6. ASK PRICE ==========
+        else if (intentName === 'ask_price') {
+            const productName = parameters?.product_name;
+            if (!productName) {
+                responseText = 'Bạn muốn xem giá sản phẩm nào ạ?';
+            } else {
+                const snapshot = await db.collection('products')
+                    .where('name', '>=', productName)
+                    .where('name', '<=', productName + '\uf8ff')
+                    .limit(1)
+                    .get();
+                
+                if (!snapshot.empty) {
+                    const product = snapshot.docs[0].data();
+                    responseText = `${product.name} có giá ${product.price?.toLocaleString()}đ ạ!`;
+                } else {
+                    responseText = `Rất tiếc, tôi không tìm thấy sản phẩm "${productName}". Bạn có thể thử tên khác không?`;
+                }
+            }
+        }
+        
+        // ========== 7. FALLBACK INTENT ==========
         else if (intentName === 'Default Fallback Intent') {
             responseText = 'Xin lỗi, tôi không hiểu ý bạn. Bạn có thể nói lại được không?';
             logStatus = 'fallback';
         }
         
-        // ========== DEFAULT ==========
+        // ========== 8. DEFAULT ==========
         else {
             responseText = 'Tôi chưa được lập trình để trả lời câu này. Xin lỗi bạn nhé!';
             logStatus = 'unknown_intent';
@@ -129,7 +176,7 @@ app.post('/webhook', async (req, res) => {
         await saveChatLog(sessionId, userQuery, responseText, intentName, logStatus, parameters);
         
     } catch (error) {
-        console.error('Lỗi Firestore:', error);
+        console.error('❌ Lỗi Firestore:', error);
         responseText = 'Có lỗi xảy ra, vui lòng thử lại sau!';
         await saveChatLog(sessionId, userQuery, responseText, intentName, 'system_error', parameters);
     }
@@ -137,6 +184,7 @@ app.post('/webhook', async (req, res) => {
     res.json({ fulfillmentText: responseText });
 });
 
+// ========== HEALTH CHECK ==========
 app.get('/', (req, res) => {
     res.send('Webhook is running!');
 });
@@ -164,4 +212,6 @@ app.get('/logs', async (req, res) => {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`✅ Webhook đang chạy tại port ${PORT}`);
+    console.log(`📡 Webhook URL: http://localhost:${PORT}/webhook`);
+    console.log(`📋 Logs API: http://localhost:${PORT}/logs`);
 });
