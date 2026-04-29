@@ -46,9 +46,13 @@ FIRESTORE
 
 ## ⚙️ Chức năng chính
 🛍️ Hiển thị và tìm kiếm sản phẩm
+
 🤖 Chatbot tư vấn tự động (tích hợp Dialogflow)
+
 🔐 Đăng nhập / đăng ký người dùng
+
 🧾 Quản lý dữ liệu bằng Firestore
+
 ☁️ Deploy hệ thống trên Firebase Hosting, Functions
 
 ---
