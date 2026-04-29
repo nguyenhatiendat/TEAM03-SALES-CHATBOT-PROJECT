@@ -16,10 +16,10 @@ Website bán hàng tích hợp chatbot hỗ trợ tư vấn khách hàng tự đ
 ---
 
 ## 🛠️ Công nghệ sử dụng
-- HTML, CSS, JavaScript
-- Firebase (Authentication, Firestore): https://firebase.google.com/?authuser=1
-- Dialogflow (Chatbot AI): https://dialogflow.cloud.google.com/
-- Sử dụng https://render.com/ để tích hợp webhook
+- HTML, CSS, JavaScript - Nằm trong folder NguyenHaTienDat_2474802010077.
+- Firebase (Authentication, Firestore): https://firebase.google.com/?authuser=1 - Vì một số lý do không được chia sẻ key của google nên không xem trực tiếp được.
+- Dialogflow (Chatbot AI): https://dialogflow.cloud.google.com/ - Nằm trong folder NguyenBaoLam_2474802010209.
+- Sử dụng https://render.com/ để tích hợp webhook - Nằm trong folder webhook, render trực tiếp từ github.
 
 ---
 
@@ -29,10 +29,17 @@ HOME
 
 <img width="1919" height="1038" alt="image" src="https://github.com/user-attachments/assets/3f8fa9a0-9b85-4a46-9f49-99d47d48619e" />
 
-
 CHATBOT
 
 <img width="389" height="667" alt="image" src="https://github.com/user-attachments/assets/c4bbddcc-399d-43c3-bea1-fdad9d279266" />
+
+FIREBASE
+
+<img width="1919" height="1078" alt="image" src="https://github.com/user-attachments/assets/97a9040a-d616-49fa-ac6b-a3b4e78ef8d2" />
+
+FIRESTORE
+
+<img width="1502" height="967" alt="image" src="https://github.com/user-attachments/assets/43cc66d7-f299-424f-b659-af50cbeea2f8" />
 
 
 ---
